@@ -4,6 +4,9 @@ module.exports = (rosco) ->
   rosco.hear /rosco?/i, (response) ->
     response.send "yes?"
 
+  rosco.hear /see?/i, (response) ->
+    response.send "See what?"
+
   rosco.hear /coffee/i, (response) ->
     response.send "Did someone mention coffee?"
 
